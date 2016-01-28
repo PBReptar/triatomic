@@ -11,10 +11,11 @@
 module.exports = (robot) ->
 
   # robot.hear /badger/i, (res) ->
-  #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+  #   res.send "Badgers? BADGERS? WE DON'T NEED ON STINKIN BADGERS"
   #
-  robot.respond /shame (@.*) +.*/i, (res) ->
+  robot.respond /shame (.*)/i, (res) ->
     user = res.match[1]
+    user = if user.search "@" != -1 then user else "@" + user 
     res.send "BAD " + user + "! SHAME ON YOU!!!"
   #
   # robot.hear /I like pie/i, (res) ->
