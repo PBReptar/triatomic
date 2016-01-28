@@ -15,7 +15,7 @@ module.exports = (robot) ->
   #
   robot.respond /shame (@.*) +.*/i, (res) ->
     user = res.match[1]
-    res.reply "BAD " + user "! SHAME ON YOU!!!"
+    res.reply "BAD " + user + "! SHAME ON YOU!!!"
   #
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
