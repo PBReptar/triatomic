@@ -46,10 +46,18 @@ module.exports = (robot) ->
   #     return
   #   res.send "#{answer}, but what is the question?"
   #
-  # robot.respond /you are a little slow/, (res) ->
-  #   setTimeout () ->
-  #     res.send "Who you calling 'slow'?"
-  #   , 60 * 1000
+  robot.respond /you are a little slow/, (res) ->
+    setTimeout () ->
+      res.send "Who you calling 'slow'?"
+    , 60 * 1000
+
+  rushReplies = [
+    "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
+    "Who the fuck would listen to Rush? Losers that's who."
+  ]
+
+  robot.hear /rush/i, (res) ->
+    res.send res.random rushReplies
   #
   # annoyIntervalId = null
   #
