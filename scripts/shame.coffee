@@ -51,13 +51,13 @@ module.exports = (robot) ->
       res.send "Who you calling 'slow'?"
     , 60 * 1000
 
-  rushReplies = [
-    "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
-    "Who the fuck would listen to Rush? Losers that's who."
-  ]
+  # rushReplies = [
+  #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
+  #   "Who the fuck would listen to Rush? Losers that's who."
+  # ]
 
-  robot.hear /rush/i, (res) ->
-    res.send res.random rushReplies
+  # robot.hear /rush/i, (res) ->
+  #   res.send res.random rushReplies
   #
   # annoyIntervalId = null
   #
