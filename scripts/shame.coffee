@@ -114,6 +114,8 @@ module.exports = (robot) ->
     diceToRoll = res.match[1]
     diceValue = res.match[2]
     totalRoll = 0
-    for (var i = 0; i < diceToRoll; i++)
+    i = 0
+    while i < diceToRoll
       totalRoll += Math.floor( (Math.random * 1000) % diceValue )
+      i++
     res.send = "Rolling "+ diceToRoll + "d" + diceValue + ", rolled a " + totalRoll
