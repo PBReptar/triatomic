@@ -110,7 +110,7 @@ module.exports = (robot) ->
   # robot.respond /sleep it off/i, (res) ->
   #   robot.brain.set 'totalSodas', 0
   #   res.reply 'zzzzz'
-  robot.respond /roll [0-9]*d[0-9]*/, (res) ->
+  robot.respond /roll ([0-9]*)d([0-9]*)/, (res) ->
     diceToRoll = res.match[1]
     diceValue = res.match[2]
     totalRoll = 0
