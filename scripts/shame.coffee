@@ -110,3 +110,10 @@ module.exports = (robot) ->
   # robot.respond /sleep it off/i, (res) ->
   #   robot.brain.set 'totalSodas', 0
   #   res.reply 'zzzzz'
+  robot.respond /roll [0-9]*d[0-9]*/, (res) ->
+    diceToRoll = res.match[1]
+    diceValue = res.match[2]
+    totalRoll = 0
+    for (var i = 0; i < diceToRoll; i++)
+      totalRoll += Math.floor( (Math.random * 1000) % diceValue )
+    res.send = "Rolling "+ diceToRoll + "d" + diceValue + ", rolled a " + totalRoll
