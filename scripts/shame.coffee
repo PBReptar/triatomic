@@ -51,6 +51,9 @@ module.exports = (robot) ->
       res.send "Who you calling 'slow'?"
     , 60 * 1000
 
+  robot.hear /TESTIFY/, (res) ->
+    res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
+
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
   #   "Who the fuck would listen to Rush? Losers that's who."
