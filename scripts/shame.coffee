@@ -56,7 +56,8 @@ module.exports = (robot) ->
 
   robot.hear /jamesbot (.*)/i, (res) ->
     corpus = res.match[1]
-    res.send("YO");
+    split_corpus = corpus.split /\s*/g
+    res.send split_corpus[0];
 
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
