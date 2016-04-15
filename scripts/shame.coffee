@@ -54,10 +54,14 @@ module.exports = (robot) ->
   robot.hear /TESTIFY/, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
 
-  robot.hear /jamesbot (.*)/i, (res) ->
-    corpus = res.match[1]
-    split_corpus = corpus.split /\s*/g
-    res.send res.random split_corpus
+  yourChance = 200
+
+  robot.hear /(.*)/i, (res) ->
+    roll = Math.floor(Math.random() * yourChance) >= yourChance - 1
+    if roll
+      corpus = res.match[1]
+      split_corpus = corpus.split /\s*/g
+      res.send "your a " + res.random(split_corpus)
 
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
