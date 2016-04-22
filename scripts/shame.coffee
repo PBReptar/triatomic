@@ -60,8 +60,10 @@ module.exports = (robot) ->
     roll = Math.floor(Math.random() * yourChance) >= yourChance - 1
     if roll
       corpus = res.match[1]
-      split_corpus = corpus.split /\s*/g
-      res.send "your a " + res.random(split_corpus)
+      split_corpus = corpus.split /\s+/g
+      distance = Math.floor(Math.random() * 4) + 1
+      subject = split_corpus.slice(split_corpus.length - distance).join(" ");
+      res.send "your a " + subject
 
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
