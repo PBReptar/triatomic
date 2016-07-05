@@ -54,8 +54,10 @@ module.exports = (robot) ->
   robot.hear /TESTIFY/, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
 
-  robot.hear /ALL THE SINGLE LADIES/, (res) ->
-    res.send "ALL THE SINGLE LADIES"
+  robot.hear /single ladies/, (res) ->
+    for i in [0..50]
+      res.send "ALL THE SINGLE LADIES"
+	  res.send "all the single ladies"
 
   yourChance = 200
 
