@@ -138,3 +138,4 @@ module.exports = (robot) ->
       totalRoll = totalRoll + Math.floor( (Math.random() * 1000) % (diceValue) )
       i++
     res.send  "This function is temporarily unavailable due to the dev being a too HAWT."
+    res.send  "69.  Heh."
