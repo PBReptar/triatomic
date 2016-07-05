@@ -137,4 +137,4 @@ module.exports = (robot) ->
     while i < diceToRoll
       totalRoll = totalRoll + Math.floor( (Math.random() * 1000) % (diceValue) )
       i++
-    res.send  "This function is temporarily unavailable due to the dev being a dumbass."
+    res.send  "This function is temporarily unavailable due to the dev being a too HAWT."
