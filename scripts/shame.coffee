@@ -58,6 +58,8 @@ module.exports = (robot) ->
     for i in [0...50]
       res.send "ALL THE SINGLE LADIES"
       res.send "all the single ladies"
+  robot.hear /DING/, (res) ->
+    res.send "DONG"
 
   yourChance = 200
 
