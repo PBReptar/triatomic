@@ -64,6 +64,9 @@ module.exports = (robot) ->
 
   robot.hear /surely/, (res) ->
     res.send "http://80sclassic.com/wp-content/uploads/2014/11/dontcallmeshirley.jpg"
+  
+  robot.hear /SPACESHIP/, (res) ->
+    res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
 
   yourChance = 200
 
