@@ -57,7 +57,7 @@ module.exports = (robot) ->
   robot.hear /single ladies/, (res) ->
     for i in [0...50]
       res.send "ALL THE SINGLE LADIES"
-      res.send "@JamesHogle++"
+      res.send "all the single ladies"
 
   robot.hear /DING/, (res) ->
     res.send "DONG"
