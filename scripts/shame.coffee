@@ -59,6 +59,15 @@ module.exports = (robot) ->
       res.send "ALL THE SINGLE LADIES"
       res.send "all the single ladies"
 
+  robot.hear /DING/, (res) ->
+    res.send "DONG"
+
+  robot.hear /surely/, (res) ->
+    res.send "http://80sclassic.com/wp-content/uploads/2014/11/dontcallmeshirley.jpg"
+  
+  robot.hear /SPACESHIP/, (res) ->
+    res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
+
   yourChance = 200
 
   robot.hear /(.*)/i, (res) ->
@@ -137,4 +146,5 @@ module.exports = (robot) ->
     while i < diceToRoll
       totalRoll = totalRoll + Math.floor( (Math.random() * 1000) % (diceValue) )
       i++
-    res.send  "This function is temporarily unavailable due to the dev being a dumbass."
+    res.send  "This function is temporarily unavailable due to the dev being a too HAWT."
+    res.send  "69.  Heh."
