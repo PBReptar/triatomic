@@ -56,8 +56,8 @@ module.exports = (robot) ->
 
   robot.hear /single ladies/, (res) ->
     for i in [0...50]
-      res.send "http://i.imgur.com/DBL2BxU.gif"
-      res.send "http://i.imgur.com/DBL2BxU.gif"
+      res.send "were SORRY!"
+      res.send "WERE sorry..."
 
   robot.hear /DING/, (res) ->
     res.send "DONG"
