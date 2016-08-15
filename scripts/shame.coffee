@@ -17,6 +17,7 @@ module.exports = (robot) ->
     user = res.match[1]
     user = if user.search("@") != -1 then user else "@" + user 
     res.send "BAD " + user + "-- ! SHAME ON YOU!!!"
+    res.send "You'll never be like @ErickKlix+++++"
   #
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
