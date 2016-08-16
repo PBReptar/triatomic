@@ -17,7 +17,6 @@ module.exports = (robot) ->
     user = res.match[1]
     user = if user.search("@") != -1 then user else "@" + user 
     res.send "BAD " + user + "-- ! SHAME ON YOU!!!"
-    res.send "You'll never be like @ErickKlix+++++"
   #
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
@@ -69,6 +68,9 @@ module.exports = (robot) ->
   robot.hear /SPACESHIP/, (res) ->
     res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
 
+  robot.hear /KARMA PARTY/, (res) ->
+    res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
+  
   yourChance = 200
 
   robot.hear /(.*)/i, (res) ->
