@@ -70,7 +70,8 @@ module.exports = (robot) ->
 
   robot.hear /KARMA PARTY/, (res) ->
     res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
-  
+    res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
+
   yourChance = 200
 
   robot.hear /(.*)/i, (res) ->
