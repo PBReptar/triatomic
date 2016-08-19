@@ -53,6 +53,12 @@ module.exports = (robot) ->
 
   robot.hear /TESTIFY/, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
+  
+  robot.hear /apple pie/, (res) ->
+    res.send "more like apple die!"
+
+  robot.hear /--/, (res) ->
+    res.send "@ErickKlix++"
 
   robot.hear /single ladies/, (res) ->
     for i in [0...50]
