@@ -64,6 +64,8 @@ module.exports = (robot) ->
     for i in [0...50]
       res.send "were SORRY!"
       res.send "WERE sorry..."
+    res.send "POT UP NOOBS!"
+    res.send "/gif runescape"
 
   robot.hear /DING/, (res) ->
     res.send "DONG"
