@@ -74,7 +74,7 @@ module.exports = (robot) ->
     res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
 
   robot.hear /KARMA PARTY/, (res) ->
-    res.send "@TrevorPasley-- @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
+    res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
     res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
 
   yourChance = 200
