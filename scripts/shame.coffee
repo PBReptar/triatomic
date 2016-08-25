@@ -51,29 +51,29 @@ module.exports = (robot) ->
       res.send "Who you calling 'slow'?"
     , 60 * 1000
 
-  robot.hear /TESTIFY/, (res) ->
+  robot.hear /TESTIFY/i, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
   
-  robot.hear /apple pie/, (res) ->
+  robot.hear /apple pie/i, (res) ->
     res.send "more like apple die!"
 
-  robot.hear /single ladies/, (res) ->
+  robot.hear /single ladies/i, (res) ->
     for i in [0...50]
       res.send "were SORRY!"
       res.send "WERE sorry..."
     res.send "POT UP NOOBS!"
     res.send "/gif runescape"
 
-  robot.hear /DING/, (res) ->
+  robot.hear /DING/i, (res) ->
     res.send "DONG"
 
-  robot.hear /surely/, (res) ->
+  robot.hear /surely/i, (res) ->
     res.send "http://80sclassic.com/wp-content/uploads/2014/11/dontcallmeshirley.jpg"
   
-  robot.hear /SPACESHIP/, (res) ->
+  robot.hear /SPACESHIP/i, (res) ->
     res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
 
-  robot.hear /KARMA PARTY/, (res) ->
+  robot.hear /KARMA PARTY/i, (res) ->
     res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
     res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
 
