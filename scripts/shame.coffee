@@ -60,7 +60,7 @@ module.exports = (robot) ->
   robot.hear /single ladies/i, (res) ->
     for i in [0...50]
       res.send "were SORRY!"
-      res.send "WERE sorry..."
+      res.send "James sucks..."
     res.send "POT UP NOOBS!"
     res.send "/gif runescape"
 
@@ -76,6 +76,12 @@ module.exports = (robot) ->
   robot.hear /KARMA PARTY/i, (res) ->
     res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
     res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
+
+  robot.hear /boats/i, (res) ->
+    res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
+
+  robot.hear /teamship/i, (res) ->
+    res.send "Part of the team, part of this shit."
 
   yourChance = 200
 
