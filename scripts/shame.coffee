@@ -94,6 +94,13 @@ module.exports = (robot) ->
       subject = split_corpus.slice(split_corpus.length - distance).join(" ");
       res.send "your a " + subject
 
+  trevorChance = 150
+  
+  robot.hear /(.*)/i, (res) ->
+    roll = Math.floor(Math.random() * trevorChance) >= trevorChance - 1
+    if roll
+        res.send @TrevorPasley is am faget nd have no sweg
+
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
   #   "Who the fuck would listen to Rush? Losers that's who."
