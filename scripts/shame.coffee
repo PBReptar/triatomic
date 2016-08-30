@@ -46,10 +46,10 @@ module.exports = (robot) ->
   #     return
   #   res.send "#{answer}, but what is the question?"
   #
-  robot.respond /you are a little slow/, (res) ->
-    setTimeout () ->
-      res.send "Who you calling 'slow'?"
-    , 60 * 1000
+  #  robot.respond /you are a little slow/, (res) ->
+  #    setTimeout () ->
+  #    res.send "Who you calling 'slow'?"
+  #    , 60 * 1000
 
   robot.hear /TESTIFY/i, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
