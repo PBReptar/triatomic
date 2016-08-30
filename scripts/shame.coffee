@@ -54,34 +54,34 @@ module.exports = (robot) ->
   robot.hear /TESTIFY/i, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
   
-  robot.hear /apple pie/i, (res) ->
-    res.send "more like apple die!"
+  #  robot.hear /apple pie/i, (res) ->
+  #  res.send "more like apple die!"
 
   robot.hear /single ladies/i, (res) ->
     for i in [0...50]
       res.send "were SORRY!"
       res.send "James sucks..."
-    res.send "POT UP NOOBS!"
-    res.send "/gif runescape"
+   # res.send "POT UP NOOBS!"
+   # res.send "/gif runescape"
 
-  robot.hear /DING/i, (res) ->
-    res.send "DONG"
+  # robot.hear /DING/i, (res) ->
+  #  res.send "DONG"
 
-  robot.hear /surely/i, (res) ->
-    res.send "http://80sclassic.com/wp-content/uploads/2014/11/dontcallmeshirley.jpg"
+  # robot.hear /surely/i, (res) ->
+  #  res.send "http://80sclassic.com/wp-content/uploads/2014/11/dontcallmeshirley.jpg"
   
-  robot.hear /SPACESHIP/i, (res) ->
-    res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
+  # robot.hear /SPACESHIP/i, (res) ->
+  #  res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
 
-  robot.hear /KARMA PARTY/i, (res) ->
-    res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
-    res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
+  # robot.hear /KARMA PARTY/i, (res) ->
+  #  res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
+  #  res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
 
-  robot.hear /boats/i, (res) ->
-    res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
+  # robot.hear /boats/i, (res) ->
+  #  res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
 
-  robot.hear /teamship/i, (res) ->
-    res.send "Part of the team, part of this shit."
+  # robot.hear /teamship/i, (res) ->
+  #  res.send "Part of the team, part of this shit."
 
   yourChance = 200
 
@@ -162,4 +162,4 @@ module.exports = (robot) ->
       totalRoll = totalRoll + Math.floor( (Math.random() * 1000) % (diceValue) )
       i++
     res.send  "This function is temporarily unavailable due to the dev being a too HAWT."
-    res.send  "69.  Heh."
+  # res.send  "69.  Heh."
