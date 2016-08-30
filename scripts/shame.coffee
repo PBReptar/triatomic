@@ -80,9 +80,6 @@ module.exports = (robot) ->
   # robot.hear /boats/i, (res) ->
   #  res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
 
-  # robot.hear /teamship/i, (res) ->
-  #  res.send "Part of the team, part of this shit."
-
   yourChance = 200
 
   robot.hear /(.*)/i, (res) ->
