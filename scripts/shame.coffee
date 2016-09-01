@@ -15,7 +15,7 @@ module.exports = (robot) ->
   #
   robot.respond /shame (.*)/i, (res) ->
     user = res.match[1]
-    user = if user.search("@") != -1 then user else "@" + user 
+    user = if user.search("@") != -1 then user else "@" + user
     res.send "BAD " + user + "-- ! SHAME ON YOU!!!"
   #
   # robot.hear /I like pie/i, (res) ->
@@ -53,7 +53,7 @@ module.exports = (robot) ->
 
   robot.hear /TESTIFY/i, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
-  
+
   #  robot.hear /apple pie/i, (res) ->
   #  res.send "more like apple die!"
 
@@ -69,7 +69,7 @@ module.exports = (robot) ->
 
   # robot.hear /surely/i, (res) ->
   #  res.send "http://80sclassic.com/wp-content/uploads/2014/11/dontcallmeshirley.jpg"
-  
+
   # robot.hear /SPACESHIP/i, (res) ->
   #  res.send "http://66.media.tumblr.com/2d750207a43135c40c0be97d9ada2ad5/tumblr_n0qeynKbO31tre0g4o1_500.gif"
 
@@ -88,9 +88,11 @@ module.exports = (robot) ->
       corpus = res.match[1]
       split_corpus = corpus.split /\s+/g
       distance = Math.floor(Math.random() * 4) + 1
-      subject = split_corpus.slice(split_corpus.length - distance).join(" ");
+      subject = split_corpus.slice(split_corpus.length - distance).join(" ")
       res.send "your a " + subject
 
+  robot.hear /\w+jesus\w+/i, (res) ->
+    res.send "(ayyyyjesus)"
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
   #   "Who the fuck would listen to Rush? Losers that's who."
