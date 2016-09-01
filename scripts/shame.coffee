@@ -58,9 +58,9 @@ module.exports = (robot) ->
   #  res.send "more like apple die!"
 
   robot.hear /single ladies/i, (res) ->
-    for i in [0...50]
+    for i in [0...30]
       res.send "were SORRY!"
-      res.send "James sucks..."
+      res.send "Never forget Harambe..."
   # res.send "POT UP NOOBS!"
   # res.send "/gif runescape"
 
