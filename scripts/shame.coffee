@@ -91,7 +91,7 @@ module.exports = (robot) ->
       subject = split_corpus.slice(split_corpus.length - distance).join(" ")
       res.send "your a " + subject
 
-  robot.hear /\w+jesus\w+/i, (res) ->
+  robot.hear /jesus/i, (res) ->
     res.send "(ayyyyjesus)"
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
