@@ -92,7 +92,7 @@ module.exports = (robot) ->
       res.send "your a " + subject
 
   robot.hear /jesus/i, (res) ->
-    res.send "(ayyyyjesus)"
+    res.send "(ayyyjesus)"
   # rushReplies = [
   #   "Rush is such a shitty band. I pity the fool who would get a Rush tattoo.",
   #   "Who the fuck would listen to Rush? Losers that's who."
