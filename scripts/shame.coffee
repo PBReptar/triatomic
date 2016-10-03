@@ -54,8 +54,8 @@ module.exports = (robot) ->
   robot.hear /TESTIFY/i, (res) ->
     res.send "DUR DUR DA DUR DUH   DUR NUH NUH  DA DA DUR"
 
-  #  robot.hear /apple pie/i, (res) ->
-  #  res.send "more like apple die!"
+  robot.hear /apple pie/i, (res) ->
+    res.send "http://static.comicvine.com/uploads/original/11116/111161618/3840907-9471916116-tumbl.gif"
 
   robot.hear /single ladies/i, (res) ->
     for i in [0...30]
