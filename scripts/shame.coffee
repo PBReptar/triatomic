@@ -77,6 +77,9 @@ module.exports = (robot) ->
     res.send "@TrevorPasley++ @NikkiJustice++ @ErickKlix++ @Shupe++ @DuncanKelly++ @JamesHogle++"
     res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
 
+  robot.hear /Thanks Reptar/i, (res) ->
+    res.send "No problem... douche"
+
   # robot.hear /boats/i, (res) ->
   #  res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
 
