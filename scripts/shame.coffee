@@ -80,9 +80,6 @@ module.exports = (robot) ->
   robot.hear /Thanks Reptar/i, (res) ->
     res.send "No problem... douche"
 
-  robot.hear /Kansas/i, (res) ->
-    res.send "Kansas--"
-
   # robot.hear /boats/i, (res) ->
   #  res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
 
