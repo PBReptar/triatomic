@@ -80,8 +80,8 @@ module.exports = (robot) ->
   robot.hear /Thanks Reptar/i, (res) ->
     res.send "No problem... douche"
 
-  robot.hear /WAAAAAAAAAAA/i, (res) ->
-    res.send "No one gives a shit about the baby James..."
+  # robot.hear /WAAAAAAAAAAA/i, (res) ->
+  #  res.send "No one gives a shit about the baby James..."
 
   robot.hear /FANTASTIC BEASTS AND/, (res) ->
     res.send "@JamesHogle--"
