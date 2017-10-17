@@ -85,6 +85,10 @@ module.exports = (robot) ->
 
   robot.hear /FANTASTIC BEASTS AND/, (res) ->
     res.send "@JamesHogle--"
+    
+    
+  robot.hear /reptard/, (res) ->
+    res.send "I'll cut you bitch."
 
   # robot.hear /boats/i, (res) ->
   #  res.send "/quote The only thing I hate more than boats is APPLE PIE - James 2016"
