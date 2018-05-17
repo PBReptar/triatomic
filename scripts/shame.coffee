@@ -75,7 +75,7 @@ module.exports = (robot) ->
 
   robot.hear /KARMA PARTY/i, (res) ->
     res.send "@ErickKlix++ @TrevorPasley++ @NikkiJustice++ @Shupe++ @DuncanKelly++ @JamesHogle++"
-    res.send "https://github.com/PabstBlueReptar/triatomic.git"
+    res.send "https://media.giphy.com/media/iPTTjEt19igne/giphy.gif"
 
   robot.hear /Thanks Reptar/i, (res) ->
     res.send "No problem... douche"
