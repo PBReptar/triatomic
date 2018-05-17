@@ -75,7 +75,7 @@ module.exports = (robot) ->
 
   robot.hear /KARMA PARTY/i, (res) ->
     res.send "@ErickKlix++ @TrevorPasley++ @NikkiJustice++ @Shupe++ @DuncanKelly++ @JamesHogle++"
-    res.send "http://www-static.weddingbee.com/pics/35543/Dancing_gifs_081.gif"
+    res.send "https://github.com/PabstBlueReptar/triatomic.git"
 
   robot.hear /Thanks Reptar/i, (res) ->
     res.send "No problem... douche"
@@ -85,8 +85,8 @@ module.exports = (robot) ->
 
   robot.hear /FANTASTIC BEASTS AND/, (res) ->
     res.send "@JamesHogle--"
-    
-    
+
+
   robot.hear /reptard/, (res) ->
     res.send "I'll cut you bitch."
 
